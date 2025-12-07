@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Service HUB · Навигация по прототипам</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      margin: 0;
+      padding: 30px;
+      color: #e2e8f0;
+    }
+    .shell {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #020617;
+      border-radius: 22px;
+      padding: 26px 30px 34px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+    p.subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      border: 1px solid #1e293b;
+      padding: 14px 16px 18px;
+      transition: all .15s ease;
+    }
+    .card:hover {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 1px #38bdf8;
+      transform: translateY(-2px);
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #e2e8f0;
+    }
+    .card-desc {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 12px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+    a.btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <h1>Service HUB · Навигация по макетам</h1>
+  <p class="subtitle">Выберите экран, который хотите открыть. Все файлы размещены в одном репозитории.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-title">Карточка оборудования + QR-наклейка</div>
+      <div class="card-desc">Экран сервис-инженера: создание устройства, генерация QR-кода.</div>
+      <a class="btn" href="creating an equipment card and QR sticker.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Инцидент: детали для инженера</div>
+      <div class="card-desc">Просмотр и действия по обращению, SLA, цепочки задач.</div>
+      <a class="btn" href="incident_detail_engineer.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">ITSM панель инженера</div>
+      <div class="card-desc">Мониторинг инцидентов, KPI, статус очереди.</div>
+      <a class="btn" href="itsm_incidents_engineer.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">SLA дашборд</div>
+      <div class="card-desc">Аналитика SLA, TTR, P90, проблемные виды услуг.</div>
+      <a class="btn" href="service_hub_dashboard_sla_by_type.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Портал техподдержки (пользователь)</div>
+      <div class="card-desc">Создание заявки, критические инциденты, статус обращения.</div>
+      <a class="btn" href="support_portal_client.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Телеграм-бот · Самодиагностика по QR</div>
+      <div class="card-desc">Флоу самообслуживания, видеоинструкции.</div>
+      <a class="btn" href="tg_bot_self_diagnosis_qr.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Телеграм-бот · Критическое обращение</div>
+      <div class="card-desc">Диалог подачи критической заявки, скан QR-кода.</div>
+      <a class="btn" href="tg_bot_support.html">Открыть</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Телеграм-бот · Статус заявки и визит</div>
+      <div class="card-desc">ETA устройства, окно визита, подтверждение времени.</div>
+      <a class="btn" href="tg_bot_ticket_status_eta_visit.html">Открыть</a>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
